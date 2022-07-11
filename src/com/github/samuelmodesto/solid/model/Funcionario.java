@@ -8,62 +8,53 @@ import com.github.samuelmodesto.solid.ValidacaoException;
 
 public class Funcionario {
 
-	private String nome;
-	private String cpf;
-	private Cargo cargo;
-	private BigDecimal salario;
-	private LocalDate dataUltimoReajuste;
+    private DadosPessoais dadosPessoais;
+    private Cargo cargo;
+    private BigDecimal salario;
+    private LocalDate dataUltimoReajuste;
 
-	public Funcionario(String nome, String cpf, Cargo cargo, BigDecimal salario) {
-		this.nome = nome;
-		this.cpf = cpf;
-		this.cargo = cargo;
-		this.salario = salario;
-	}
+    public Funcionario(String nome, String cpf, Cargo cargo, BigDecimal salario) {
+        this.cargo = cargo;
+        this.salario = salario;
+    }
 
-	public void atualizarSalario(BigDecimal novoSalario) {
-		this.salario = novoSalario;
-		this.dataUltimoReajuste = LocalDate.now();
-	}
+    public void atualizarSalario(BigDecimal novoSalario) {
+        this.salario = novoSalario;
+        this.dataUltimoReajuste = LocalDate.now();
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public void promover(Cargo novoCargo) {
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public Cargo getCargo() {
+        return cargo;
+    }
 
-	public String getCpf() {
-		return cpf;
-	}
+    public void setCargo(Cargo cargo) {
+        this.cargo = cargo;
+    }
 
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
+    public BigDecimal getSalario() {
+        return salario;
+    }
 
-	public Cargo getCargo() {
-		return cargo;
-	}
+    public void setSalario(BigDecimal salario) {
+        this.salario = salario;
+    }
 
-	public void setCargo(Cargo cargo) {
-		this.cargo = cargo;
-	}
+    public LocalDate getDataUltimoReajuste() {
+        return dataUltimoReajuste;
+    }
 
-	public BigDecimal getSalario() {
-		return salario;
-	}
+    public void setDataUltimoReajuste(LocalDate dataUltimoReajuste) {
+        this.dataUltimoReajuste = dataUltimoReajuste;
+    }
 
-	public void setSalario(BigDecimal salario) {
-		this.salario = salario;
-	}
+    public DadosPessoais getDadosPessoais() {
+        return dadosPessoais;
+    }
 
-	public LocalDate getDataUltimoReajuste() {
-		return dataUltimoReajuste;
-	}
-
-	public void setDataUltimoReajuste(LocalDate dataUltimoReajuste) {
-		this.dataUltimoReajuste = dataUltimoReajuste;
-	}
-
+    public void setDadosPessoais(DadosPessoais dadosPessoais) {
+        this.dadosPessoais = dadosPessoais;
+    }
 }
