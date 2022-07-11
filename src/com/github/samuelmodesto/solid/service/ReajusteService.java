@@ -1,21 +1,22 @@
 package com.github.samuelmodesto.solid.service;
 
-import com.github.samuelmodesto.solid.ValidacaoException;
 import com.github.samuelmodesto.solid.model.Funcionario;
+import com.github.samuelmodesto.solid.service.interfaces.ValidarReajuste;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.time.LocalDate;
+import java.util.List;
 
 public class ReajusteService {
 
+    private List<ValidarReajuste> validacoes;
+
+    public ReajusteService(List<ValidarReajuste> validacoes) {
+        this.validacoes = validacoes;
+    }
+
     public void reajustarSalarioDoFuncionario(Funcionario funcionario, BigDecimal aumento){
-        BigDecimal salarioAtual = funcionario.getSalario();
-        BigDecimal percentualReajuste = aumento.divide(salarioAtual, RoundingMode.HALF_UP);
-        if (percentualReajuste.compareTo(new BigDecimal("0.4")) > 0) {
-            throw new ValidacaoException("Reajuste nao pode ser superior a 40% do salario!");
-        }
-        BigDecimal salarioReajustado = salarioAtual.add(aumento);
+        this.validacoes.forEach(e -> e.validar(funcionario, aumento));
+        BigDecimal salarioReajustado = funcionario.getSalario().add(aumento);
         funcionario.atualizarSalario(salarioReajustado);
     }
 }
