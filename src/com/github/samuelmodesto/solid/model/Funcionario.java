@@ -24,6 +24,7 @@ public class Funcionario {
     }
 
     public void promover(Cargo novoCargo) {
+        this.cargo = novoCargo;
     }
 
     public Cargo getCargo() {
