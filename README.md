@@ -1,3 +1,4 @@
+Ordem de estudo recomendada:
 <p align="center">
   <a href="https://github.com/SamuelModesto">
       <img alt="Java-Solid" src="https://annaserba.com/images/scientific-chestnut.jpg" />
