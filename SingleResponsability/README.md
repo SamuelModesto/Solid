@@ -12,7 +12,6 @@
 - [Explicação](#Explicação)
   - [Cenário](#Cenário-De-Aplicação)
   - [Exemplo de Código](#Exemplo-de-código)
-- [Diagrama de Classe](#Diagrama-de-Classe)
 
 - [Créditos](#Créditos)
 - [Licença](#Licença)
