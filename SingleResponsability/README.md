@@ -145,7 +145,7 @@ public class ValidacaoException extends RuntimeException {
 <!-- ```java 
 
 ``` -->
-## Diagrama de classe
+<!-- ## Diagrama de classe -->
 
 <!-- <p align="center">
   <a href="https://github.com/SamuelModesto">
@@ -154,6 +154,9 @@ public class ValidacaoException extends RuntimeException {
 </p> -->
 
 ## Créditos
+- https://www.alura.com.br/
+- https://agilemanifesto.org/
+- https://bityli.com/AqvfEN
 
 ## Licença
 
