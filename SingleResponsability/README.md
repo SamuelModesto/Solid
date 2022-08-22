@@ -165,4 +165,4 @@ Distribuído sob a licença do MIT. Consulte `LICENSE` para obter mais informaç
 Samuel Modesto 
 - [Github](https://github.com/SamuelModesto) 
 - [LinkedIn](https://www.linkedin.com/in/samuelmodesto)
-- Email - **samuelmodestoes@gmail.com**
+- **samuelmodestoes@gmail.com**
