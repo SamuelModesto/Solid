@@ -16,6 +16,6 @@
   </strong>
 </p>
 <p align="center">
-Este projeto tem como ojetivo demonstrar os 5 princípios do SOLID usando a linguagem java, os commits contam com o nome do princípio para que seja mais facil, qual princípio está sendo aplicado.
+Este projeto tem como ojetivo demonstrar os 5 princípios do SOLID usando a linguagem java, cada pasta conta com o nome do princípio e todo o detalhamento de como utilizar o princípio que está sendo estudado.
 </p>
 
