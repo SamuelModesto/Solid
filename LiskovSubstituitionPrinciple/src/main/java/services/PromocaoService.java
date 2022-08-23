@@ -7,7 +7,7 @@ import model.Funcionario;
 public class PromocaoService {
 
     public void promover(Funcionario funcionario, boolean metaBatida) {
-        Cargo cargoAtual = funcionario.getCargo();
+        Cargo cargoAtual = funcionario.getDadosPessoais().getCargo();
         if (Cargo.GERENTE == cargoAtual) {
             throw new ValidacaoException("Gerentes não podem ser promovidos");
         }

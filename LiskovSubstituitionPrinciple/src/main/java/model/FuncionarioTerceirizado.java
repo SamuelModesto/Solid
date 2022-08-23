@@ -5,12 +5,14 @@ import enums.Cargo;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class FuncionarioTerceirizado extends Funcionario {
+public class FuncionarioTerceirizado {
 
+    private DadosPessoais dadosPessoais;
     private String nomeEmpresaTerceirizada;
 
-    public FuncionarioTerceirizado(String nome, String cpf, BigDecimal salario, Cargo cargo) {
-        super(nome, cpf, salario, cargo);
+    public FuncionarioTerceirizado(DadosPessoais dadosPessoais, String nomeEmpresaTerceirizada) {
+        this.dadosPessoais = dadosPessoais;
+        this.nomeEmpresaTerceirizada = nomeEmpresaTerceirizada;
     }
 
     public String getNomeEmpresaTerceirizada() {
