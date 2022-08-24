@@ -1,11 +1,11 @@
 package tributacao;
 
-import interfaces.Reajuste;
+import interfaces.ReajusteTributavel;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class ReajustePromocao implements Reajuste {
+public class ReajustePromocao implements ReajusteTributavel{
 
     private BigDecimal valor;
     private LocalDate data;

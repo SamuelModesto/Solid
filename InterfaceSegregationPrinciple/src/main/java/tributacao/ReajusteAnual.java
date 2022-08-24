@@ -4,7 +4,6 @@ import interfaces.Reajuste;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.function.BiFunction;
 
 public class ReajusteAnual implements Reajuste {
 
@@ -26,8 +25,4 @@ public class ReajusteAnual implements Reajuste {
         return data;
     }
 
-    @Override
-    public BigDecimal valorImpostoDeRenda() {
-        return BigDecimal.ZERO;
-    }
 }
