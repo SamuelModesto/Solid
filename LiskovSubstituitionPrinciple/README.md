@@ -18,7 +18,8 @@
 - [Contato](#Contato)
 
 ## Propósito
-"Se q(x) é uma propriedade demonstrável dos objetos x de tipo T. Então q(y) deve ser verdadeiro para objetos y de tipo S onde S é um subtipo de T."
+"Se q(x) é uma propriedade demonstrável dos objetos x de tipo T. Então q(y) deve ser verdadeiro para objetos y de tipo S onde S é um subtipo de T." Ou seja,
+se de uma classe for criada uma subclasse utilizando herança, o objeto resultante dessa subclasse precisa ser capaz de substituir o objeto da classe principal sem prejudicar o programa.
 ## Explicação
 ### Cenário de aplicação
 Um sistema que controla funcionários e funcionários terceirizados e tem como funcionalidade para funcionários a promoção de cargo e o reajuste salarial, porém, neste exemplo o requisito diz que funcionários terceirizados não recebem promoções ou reajustes salariais, ficando a cargo da empresa terceira essa função.
