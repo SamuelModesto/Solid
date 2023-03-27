@@ -1,7 +1,7 @@
 Ordem de estudo recomendada:
 <p align="center">
   <a href="https://github.com/SamuelModesto">
-      <img alt="Java-Solid" src="https://annaserba.com/images/scientific-chestnut.jpg" />
+      <img alt="Java-Solid" src="https://github.com/SamuelModesto/Assets/blob/master/Imagens%20Java-Solid/Solid.png" />
   </a>
 </p>
 <h1 align="center">
